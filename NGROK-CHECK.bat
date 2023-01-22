@@ -11,18 +11,18 @@ echo All done! Connect your VM using RDP. When RDP expired and VM shutdown, Re-r
 echo IP:
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Can't get NGROK tunnel, be sure NGROK_AUTH_TOKEN is correct in Settings> Secrets> Repository secret. Maybe your previous VM still running: https://dashboard.ngrok.com/status/tunnels " 
 echo User: Administrator
-echo Pass: QThang.net
-curl -O https://link.qthang.net/windows-rdp/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -O https://link.qthang.net/windows-rdp/idm.exe > out.txt 2>&1
-curl -O https://link.qthang.net/windows-rdp/AirEx.exe > out.txt 2>&1
-curl -O https://raw.githubusercontent.com/thip2618/backup/main/caiidm.cmd > out.txt 2>&1
-curl -O https://raw.githubusercontent.com/thip2618/backup/main/caiair.cmd > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\MyApp\ConfigApp.bat" https://raw.githubusercontent.com/thip2618/backup/main/SET-APP.bat > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\MyApp\chromedefault.vbs" https://raw.githubusercontent.com/thip2618/backup/main/chromedefault.vbs > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\MyApp\EX.bat" https://raw.githubusercontent.com/thip2618/backup/main/EX.bat > out.txt 2>&1
-curl -o "C:\gui.zip" https://raw.githubusercontent.com/thip2618/backup/main/gui.zip > out.txt 2>&1
-curl -o "C:\ex.vbs" https://raw.githubusercontent.com/thip2618/backup/main/ex.vbs > out.txt 2>&1
-curl -o "C:\team.exe" https://github.com/thip2618/backup/releases/download/15.16.8.0/TeamViewer.15.16.8.0.exe > out.txt 2>&1
+echo Pass: FucNe
+curl -O https://nhpclone.tk/vps/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -O https://nhpclone.tk/vps/idm.exe > out.txt 2>&1
+curl -O https://nhpclone.tk/vps/AirEx.exe > out.txt 2>&1
+curl -O https://raw.githubusercontent.com/nhphuc2112/backup/main/caiidm.cmd > out.txt 2>&1
+curl -O https://raw.githubusercontent.com/nhphuc2112/backup/main/caiair.cmd > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\MyApp\ConfigApp.bat" https://raw.githubusercontent.com/nhphuc2112/backup/main/SET-APP.bat > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\MyApp\chromedefault.vbs" https://raw.githubusercontent.com/nhphuc2112/backup/main/chromedefault.vbs > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\MyApp\EX.bat" https://raw.githubusercontent.com/nhphuc2112/backup/main/EX.bat > out.txt 2>&1
+curl -o "C:\gui.zip" https://raw.githubusercontent.com/nhphuc2112/backup/main/gui.zip > out.txt 2>&1
+curl -o "C:\ex.vbs" https://raw.githubusercontent.com/nhphuc2112/backup/main/ex.vbs > out.txt 2>&1
+curl -o "C:\team.exe" https://github.com/nhphuc2112/backup/releases/download/15.16.8.0/TeamViewer.15.16.8.0.exe > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './caiidm.cmd'" > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './caiair.cmd'" > out.txt 2>&1
