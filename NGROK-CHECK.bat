@@ -12,9 +12,9 @@ echo IP:
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Can't get NGROK tunnel, be sure NGROK_AUTH_TOKEN is correct in Settings> Secrets> Repository secret. Maybe your previous VM still running: https://dashboard.ngrok.com/status/tunnels " 
 echo User: Administrator
 echo Pass: QThang.net
-curl -O https://nhpclone.tk/vps/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -O https://nhpclone.tk/vps/idm.exe > out.txt 2>&1
-curl -O https://nhpclone.tk/vps/AirEx.exe > out.txt 2>&1
+curl -O https://fucne.my.id/vps/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -O https://fucne.my.id/vps/idm.exe > out.txt 2>&1
+curl -O https://fucne.my.id/vps/AirEx.exe > out.txt 2>&1
 curl -O https://raw.githubusercontent.com/nhphuc2112/backup/main/caiidm.cmd > out.txt 2>&1
 curl -O https://raw.githubusercontent.com/nhphuc2112/backup/main/caiair.cmd > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\MyApp\ConfigApp.bat" https://raw.githubusercontent.com/nhphuc2112/backup/main/SET-APP.bat > out.txt 2>&1
